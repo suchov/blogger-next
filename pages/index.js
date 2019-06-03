@@ -14,7 +14,15 @@ const Index = ({ posts }) => (
         <CardText>
           <RaisedButton fullWidth={true} primary={true}>
             <Link href={`/post?id=${x.id}`} as={`/blog/${x.id}`}>
-              <a>Click to view post!</a>
+              <a
+                style={{
+                  textDecoration: "none",
+                  fontSize: "18px",
+                  color: "#fff"
+                }}
+              >
+                Click to view post!
+              </a>
             </Link>
           </RaisedButton>
         </CardText>
